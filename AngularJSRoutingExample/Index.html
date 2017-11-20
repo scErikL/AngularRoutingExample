@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html ng-app="testApp">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+
+    <script src="App/app.js"></script>
+    <script src="App/mainCtrl.js"></script>  
+    <script src="App/aboutCtrl.js"></script>
+    
+    <style>
+        .main{
+            background-color: lightgreen;
+        }
+        .about{
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Test Routing App</h1>
+    [<a href="#!main">Main page</a>]
+    [<a href="#!about">About</a>]
+    
+    <!-- Med hjälp av ng-view direktivet renderas de olika vyerna i nedan div-tagg -->
+    <div ng-view></div>
+
+</body>
+
+
+
+
+</html>
